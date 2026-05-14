@@ -21,7 +21,7 @@ const app=exp()
 
 //enable cors
 app.use(cors({
-    origin:['https://blog-i3mb1rjkt-mvishnuvardhanreddy06-oss-projects.vercel.app'],
+    origin:['https://blog-b7ec691m3-mvishnuvardhanreddy06-oss-projects.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     credentials: true
 }))
