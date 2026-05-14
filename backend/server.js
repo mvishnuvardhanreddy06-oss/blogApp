@@ -21,7 +21,7 @@ const app=exp()
 
 //enable cors
 app.use(cors({
-    origin:['http://localhost:5173','http://localhost:5175'],
+    origin:['http://localhost:5173','http://localhost:5175','https://capstone-project-blond-rho.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     credentials: true
 }))
