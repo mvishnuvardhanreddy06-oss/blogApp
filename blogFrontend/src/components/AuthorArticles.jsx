@@ -35,7 +35,7 @@ function AuthorArticles() {
       try {
         setLoading(true)
        //read articles of current author
-       let res=await axios.get("http://localhost:3000/author-api/articles",{withCredentials:true})
+       let res=await axios.get("https://blogapp-1-eebs.onrender.com/author-api/articles",{withCredentials:true})
        //update articles state
        if(res.status===200){
         setArticles(res.data.payload)

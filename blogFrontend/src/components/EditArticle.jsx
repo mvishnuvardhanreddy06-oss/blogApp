@@ -51,7 +51,7 @@ function EditArticle() {
 
       // Include articleId because backend route expects it.
       const payload = { ...modifiedArticle, articleId: article._id };
-      const res = await axios.put("http://localhost:3000/author-api/articles", payload, {
+      const res = await axios.put("https://blogapp-1-eebs.onrender.com/author-api/articles", payload, {
         withCredentials: true,
       });
 
