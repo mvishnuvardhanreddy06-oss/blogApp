@@ -20,11 +20,16 @@ dns.setServers(['8.8.8.8', '1.1.1.1'])
 const app=exp()
 
 //enable cors
-app.use(cors({
-    origin:['https://blog-b7ec691m3-mvishnuvardhanreddy06-oss-projects.vercel.app'],
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-    credentials: true
-}))
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://blog-lkxtxzd0e-mvishnuvardhanreddy06-oss-projects.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
+  })
+);
 
 //add cookieParser
 app.use(cookieParser())
