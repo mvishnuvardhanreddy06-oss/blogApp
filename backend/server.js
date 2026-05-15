@@ -24,7 +24,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://blog-lkxtxzd0e-mvishnuvardhanreddy06-oss-projects.vercel.app",
+      "https://blog-app-pink-one-10.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
