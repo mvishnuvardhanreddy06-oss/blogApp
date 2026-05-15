@@ -38,7 +38,7 @@ function WriteArticles() {
       const authorId = currentUser?.id || currentUser?._id;
       const payload = { ...articleObj, author: authorId };
 
-      const res = await axios.post("https://blogapp-1-eebs.onrender.com/author-api/article", payload, {
+      const res = await axios.post("https://blogapp-2-shu3.onrender.com/author-api/article", payload, {
         withCredentials: true,
       });
 

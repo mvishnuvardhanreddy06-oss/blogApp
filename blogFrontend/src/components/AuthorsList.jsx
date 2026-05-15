@@ -22,7 +22,7 @@ import {
 
 function AuthorsList() {
   const user = useAuth((state) => state.currentUser);
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://blogapp-1-eebs.onrender.com";
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://blogapp-2-shu3.onrender.com";
 
   const [userList, setuserList] = useState([]);
   const [loading, setLoading] = useState(false);

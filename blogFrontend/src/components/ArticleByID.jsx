@@ -49,7 +49,7 @@ function ArticleByID() {
       setLoading(true);
 
       try {
-        const res = await axios.get(`https://blogapp-1-eebs.onrender.com/user-api/article/${id}`, { withCredentials: true });
+        const res = await axios.get(`https://blogapp-2-shu3.onrender.com/user-api/article/${id}`, { withCredentials: true });
 
         setArticle(res.data.payload);
       } catch (err) {
@@ -79,7 +79,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        `https://blogapp-1-eebs.onrender.com/author-api/articles`,
+        `https://blogapp-2-shu3.onrender.com/author-api/articles`,
         { articleId:article._id,isArticleActive: newStatus },
         { withCredentials: true },
       );
@@ -112,7 +112,7 @@ function ArticleByID() {
     try {
       //add articleId
       const payload = { ...commentObj, articleId: article._id };
-      let res = await axios.put("https://blogapp-1-eebs.onrender.com/user-api/articles", payload, { withCredentials: true });
+      let res = await axios.put("https://blogapp-2-shu3.onrender.com/user-api/articles", payload, { withCredentials: true });
       if (res.status === 200) {
         setArticle(res.data.payload);
       }
